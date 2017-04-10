@@ -1,0 +1,28 @@
+.quote{
+  ;
+  width:33%;
+  margin-right:auto;
+  margin-left:auto;
+  border-color:white;
+  border-radius:5px;
+  margin-top:20px;
+  padding:20px;
+  height:auto;
+}
+
+.quote-text{
+  background-color:;
+  width:33%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-color:blue;
+  border-radius:5px;
+  margin-top:20px;
+  padding:20px;
+  height:auto; 
+}
+
+.quote-author{
+  font-size:20px;
+  font-style:italic;
+}
