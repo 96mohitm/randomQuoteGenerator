@@ -3,11 +3,12 @@ $(document).ready(function(){
   var quote;
   var author;
   function getQuote(){
-    var url="http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
+    var url="https://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en";
     $.getJSON(url, function(data){
       tweetThis = data.quoteText + " By - " + data.quoteAuthor;
       $(".quote-text").html('"'+data.quoteText+'"');
       $(".quote-author").html("-"+ data.quoteAuthor);
+      
     });
     
    
@@ -23,7 +24,7 @@ $(document).ready(function(){
     $(this).addClass("disabled");
     $(this).html("Sorry! 140 chars exceeded!");
   } else {
-    $(this).attr("href", "http://twitter.com/intent/tweet?text=" + tweetThis);
+    $(this).attr("href", "https://twitter.com/intent/tweet?text=" + tweetThis);
   }
 
     });
